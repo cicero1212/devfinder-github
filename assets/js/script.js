@@ -135,7 +135,13 @@ document.querySelector('.lightdark').addEventListener('click', (event)=> {
 
         document.body.style = `background-color: ${colorsWhite[1]}; color: ${colorsWhite[5]};`;
         searchInput.style = `background-color: ${colorsWhite[0]}; box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.20); color: ${colorsWhite[4]};`;
-        preencherResultado.style = `background-color: ${colorsWhite[0]}; box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.20); color: ${colorsWhite[3]}; display: block;`;
+        
+        if(preencherResultado.style.display === 'block'){
+            preencherResultado.style = `background-color: ${colorsWhite[0]}; box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.20); color: ${colorsWhite[3]}; display: block;`;
+        }else{
+            preencherResultado.style = `background-color: ${colorsWhite[0]}; box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.20); color: ${colorsWhite[3]}; display: none;`;
+        };
+
         userName.style = `color: ${colorsWhite[5]};`;
         joinGitHub.style = `color: ${colorsWhite[3]};`;
         statusGitHub.style = `background-color: ${colorsWhite[1]};`;
@@ -154,7 +160,13 @@ document.querySelector('.lightdark').addEventListener('click', (event)=> {
 
         document.body.style = `background-color: ${colorsBlack[2]}; color: ${colorsBlack[3]};`;
         searchInput.style = `background-color: ${colorsBlack[1]}; color: ${colorsBlack[3]};`;
-        preencherResultado.style = `background-color: ${colorsBlack[1]}; color: ${colorsBlack[3]}; display: block;`;
+        
+        if(preencherResultado.style.display === 'block'){
+            preencherResultado.style = `background-color: ${colorsBlack[1]}; color: ${colorsBlack[3]}; display: block;`;
+        }else{
+            preencherResultado.style = `background-color: ${colorsBlack[1]}; color: ${colorsBlack[3]}; display: none;`;
+        };
+
         userName.style = `color: ${colorsBlack[3]};`;
         joinGitHub.style = `color: #ccc;`;
         statusGitHub.style = `background-color: ${colorsBlack[2]};`;
