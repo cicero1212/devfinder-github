@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Mentor | GitHub user search app</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="box-container">
+      <header>
+        <div class="infos-header">
+          <h2>devfinder</h2>
+          <p class="lightdark">
+            LIGHT
+            <i data-feather="sun"></i>
+          </p>
+        </div>
+
+        <div class="search-header">
+          <input type="text" maxlength="41" class="search-input" placeholder="Search GitHub username…" >
+          <i data-feather="search"></i>
+          <p>No results</p>
+          <button class="search-button">Search</button>
+        </div>
+      </header>
+
+      <section class="infos-user-section">
+        <div class="infos-section">
+          <div class="imagem-git">
+            <img src="./assets/img/github-octocat.png" alt="">
+          </div>
+
+          <div class="github-section">
+            <div class="header-github">
+              <h1 class="username">Not Available</h1>
+              <p class="joingithub">Not Available</p>
+            </div>
+            <a href="" id="name-github" target="_blank">Not Available</a>
+
+            <p id="infos-user-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.</p>
+            <div class="status-github">
+              <ul>
+                <li>
+                  <p>Repos</p>
+                  <h4 class="repositorios">0</h4>
+                </li>
+                <li>
+                  <p>Followers</p>
+                  <h4 class="followers">0</h4>
+                </li>
+                <li>
+                  <p>Following</p>
+                  <h4 class="following">0</h4>
+                </li>
+              </ul>
+            </div>
+
+            <nav class="menu-nav">
+              <div>
+                <i data-feather="map-pin"></i>
+                <p class="localization">Not Available</p>
+              </div>
+              <div>
+                <i data-feather="twitter"></i>
+                <a class="twitteruser" target="_blank">Not Available</a>
+              </div>
+              <div>
+                <i data-feather="link"></i>
+                <a class="linkblog" target="_blank">Not Available</a>
+              </div>
+              <div>
+                <i data-feather="home"></i>
+                <p class="urlgithub">Not Available</p>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <script>feather.replace()</script>
+  <script src="./assets/js/script.js"></script>
+</body>
+</html>
